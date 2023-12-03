@@ -1,0 +1,39 @@
+
+.Card.Title {
+    text-align: center;
+   
+  }
+  
+  
+.card-one {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: none !important; 
+    margin-top: 30px
+    
+  }
+
+  .card-deck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 700px;
+  margin-left: 250px;
+    height:500px;
+}
+   .card-one{
+ 
+     
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-right: 20px;
+   margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+   
+  }
+
+  
+
+  

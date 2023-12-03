@@ -1,0 +1,95 @@
+
+
+.container {
+  align-items: left;
+    width: 600px;
+    }
+  
+  .sorting-table {
+    width: 600px;
+   align-items: left;
+    }
+  
+  .sorting-table th,
+  .sorting-table td {
+    border: 1px solid #ddd; /* Add a 1px solid border to th and td */
+    padding: 8px; /* Add padding to th and td */
+    text-align: center; /* Align text to the left */
+    font-size: 13px;
+   
+  }
+  
+  .sorting-table tfoot {
+    background-color: #f2f2f2; /* Add a background color to th */
+  }
+  
+  .sorting-table{
+     /* Add a background color to td */
+     border: 1px solid #ddd;
+     margin-top: 30px;
+  }
+  
+  .sorting-table td {
+    color: rgb(98, 100, 100);
+    }
+  
+  /* Optional: Add hover effect to table rows */
+  .sorting-table  tbody tr:hover {
+    background-color: #f5f5f5; /* Change background color on hover */
+  }
+  /* Add this CSS to your TableData.css file */
+.sorting-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  
+  .sorting-table th {
+    
+  }
+  
+  /* Remove the vertical lines */
+  .sorting-table th, .sorting-table td {
+    border-right: none;
+    border-left: none;
+    border-bottom: #ddd 1.5px solid;
+  }
+  
+  /* Optional: Add styling for the header */
+  .sorting-table th {
+    position: relative;
+  }
+  
+  .sorting-table th i {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  
+  .sorting-table tfoot th {
+    background-color: #f2f2f2;
+  }
+  .text {
+    float: left;
+    color: #6d6c6c;
+   
+  }
+  
+  .icons{
+    float:right;
+    color: #ddd;
+   margin-top: 10px;
+  }
+  .head{
+    text-align: end;
+  }
+  .conss{
+    margin-left: 20px;
+   
+   color: #444343;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+  }
