@@ -1,22 +1,22 @@
+// Dashboard Component
 
-import React from 'react'
-import Charts from '../pages/Charts'
-import TableData from '../pages/TableData'
+import React from 'react';
+import Charts from '../pages/Charts';
+import TableData from '../pages/TableData';
 
 function Dashboard() {
   return (
-    <div class="container-fluid">
-    <div class="row">
-      <div class="col-6">
-     <TableData/>
-      </div>
-      <div class="col-6">
-      <Charts/>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md-6">
+          <TableData />
+        </div>
+        <div className="col-md-6">
+          <Charts />
+        </div>
       </div>
     </div>
-    
-    </div>
-  )
+  );
 }
 
-export default Dashboard
+export default Dashboard;

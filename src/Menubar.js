@@ -10,6 +10,7 @@ import DonutChart from './pages/DonutChart';
 import CreatesAds from './pages/CreatesAds';
 import { Card,  } from 'react-bootstrap';
 import Dashboard from './components/Dashboard';
+import Charts from './pages/Charts';
 
 function Menubar() {
   return (
@@ -28,6 +29,8 @@ function Menubar() {
           <Route path="registration-text" element={<RegistrationForm/>} />
           <Route path="/registration-media" element={ <RegistrationMediaForm/>}/>
           <Route path="/createads" element={<CreatesAds/>} />
+       
+        
         
           
         

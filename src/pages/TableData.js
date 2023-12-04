@@ -1,10 +1,7 @@
 
-
-
 import React from 'react';
 import { useTable, useSortBy } from 'react-table';
-import './TableData.css';
-import { Card } from 'react-bootstrap';
+import './TableData.css'; 
 
 function TableData() {
   const data = React.useMemo(
@@ -40,54 +37,58 @@ function TableData() {
 
   return (
     <div className='fluid'>
-    <Card>
-   <tr   style={{  height: '10px' }}>
-          <span class='conss'>Ad Insights</span>
-        <span class='icons'><i class="bi bi-question-circle"></i></span>
+       <table {...getTableProps()} className="sorting-table">
+  <thead>
+    <tr>
+      <th colSpan={columns.length} className="extra-header">
         
-
-        </tr>
-     
-      <table {...getTableProps()} className="sorting-table">
-        
-        <thead>
-          
-          {headerGroups.map(headerGroup => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map(column => (
-                <th {...column.getHeaderProps(column.getSortByToggleProps())}>
-                  {column.render('Header')}
-                  <i className="bi bi-chevron-expand"></i>
-                </th>
-              ))}
-            </tr>
+        <div className='text-tree'>Ad Insights</div>
+        <div className='icons-one'><i className="bi bi-question-circle"></i></div>
+      </th>
+    </tr>
+    {headerGroups.map(headerGroup => (
+      <tr {...headerGroup.getHeaderGroupProps()}>
+        {headerGroup.headers.map(column => (
+          <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+            {column.render('Header')}
+            <i className="bi bi-chevron-expand"></i>
+          </th>
+        ))}
+      </tr>
+    ))}
+  </thead>
+  <tbody {...getTableBodyProps()}>
+    {rows.map(row => {
+      prepareRow(row);
+      return (
+        <tr {...row.getRowProps()}>
+          {row.cells.map(cell => (
+            <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
           ))}
-        </thead>
-        <tbody {...getTableBodyProps()}>
-          {rows.map(row => {
-            prepareRow(row);
-            return (
-              <tr {...row.getRowProps()}>
-                {row.cells.map(cell => (
-                  <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
-                ))}
-              </tr>
-            );
-          })}
-        </tbody>
-        <tfoot>
-          <tr>
-            <th>Total</th>
-            <th>26,510</th>
-            <th>USD 1,43819</th>
-            <th>489</th>
-            <th>USD 15,73,563</th>
-          </tr>
-        </tfoot>
-      </table>
-    </Card>
-    </div>
+        </tr>
+      );
+    })}
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Total</th>
+      <th>26,510</th>
+      <th>USD 1,43819</th>
+      <th>489</th>
+      <th>USD 15,73,563</th>
+    </tr>
+  </tfoot>
+</table>
+
+      </div>
+    
   );
 }
 
 export default TableData;
+  
+        
+          
+      
+
+ 

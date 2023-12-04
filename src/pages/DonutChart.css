@@ -1,11 +1,89 @@
-.container-s{
-    width: 300px;
-    
-}
- .fluid{
+/* DonutChart.css */
 
-    height: 10%;
-    width: 100%;
-    margin-top: 20px;
- }  
+.table-sort {
+    width: 655px;
  
+    font-size: 13px;
+    padding: 13px;
+    color: #212529;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  .table-sort th,
+  .table-sort td {
+  padding: 7px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .table-sort th {
+ 
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .table-sort td {
+   color: rgb(114, 112, 112);
+    }
+  
+ 
+  .table-sort-sm th,
+  .table-sort-sm td {
+    font-size: 10px;
+  }
+  
+  @media (max-width: 575.98px) {
+    .table-sort-responsive {
+      display: block;
+      width: 100%;
+     
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+    }
+    .table-sort-responsive > .table-sort {
+      border: none;
+    }
+    .table-sort-responsive > .table-sort thead,
+    .table-sort-responsive > .table-sort tbody,
+    .table-sort-responsive > .table-sort th,
+    .table-sort-responsive > .table-sort td,
+    .table-sort-responsive > .table-sort tr {
+      display: block;
+    }
+    .table-sort-responsive > .table-sort thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    .table-sort-responsive > .table-sort tr {
+     
+      border: 1px solid #dee2e6;
+    }
+    .table-sort-responsive > .table-sort th,
+    .table-sort-responsive > .table-sort td {
+      display: block;
+      text-align: center; 
+    }
+    .table-sort-responsive > .table-sort tbody th,
+    .table-sort-responsive > .table-sort tbody td {
+      vertical-align: top;
+    }
+    .table-sort-responsive > .table-sort tbody th {
+      font-size: 11px;
+    }
+  }
+  .donutcharts{
+  background-color: aqua;
+
+  width: 40%;
+  
+}
+sorting-table tfoot {
+    background-color: #743c3c;
+    border-right: none;
+    border-left: none;
+   
+  }
