@@ -1,39 +1,35 @@
 
-.Card.Title {
-    text-align: center;
-   
-  }
-  
-  
-.card-one {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border: none !important; 
-    margin-top: 30px
-    
-  }
-
-  .card-deck {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   width: 700px;
-  margin-left: 250px;
-    height:500px;
+.height-width {
+  height: 500px;
+  width: 100%;
 }
-   .card-one{
+.Card.Title {
+  text-align: center;
  
-     
-   margin-top: 20px;
-   margin-bottom: 20px;
-   margin-right: 20px;
-   margin-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+.card-one {
+  box-shadow: 0 4px 8px rgba(145, 51, 51, 0.1); 
+  border: none !important; 
  
-   
   }
 
+ .popins{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+ }
   
+
+  
+  .col-sm{
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.1); 
+    border: none !important; 
+    border-radius: 15px; 
+    margin: 10px;
+ 
+  }
+ 
+
+  
+     
 
   

@@ -1,9 +1,6 @@
 .cards{
-
-    margin-top: 20px;
-    
-   
-}
+margin-top: 20px;
+    }
 
 .cards-container {
   
@@ -15,23 +12,23 @@
     margin-bottom: 20px;
     margin-right: 20px;
   }
-  
-  
-
-.cards .form-control {
+  .cards .form-control {
     border-radius: 4px; 
   }
-  
-  
   .cards .btn {
     border-radius: 4px;
     width:150px;
     border: solid #ddd 1.5px;
-
-    
+   
   }
   .justify-content-end{
   
    margin-top: 130px;
   }
+ 
+
+
+  
+  
+ 
  

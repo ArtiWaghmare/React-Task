@@ -1,5 +1,3 @@
-// Dashboard Component
-
 import React from 'react';
 import Charts from '../pages/Charts';
 import TableData from '../pages/TableData';
