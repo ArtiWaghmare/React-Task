@@ -9,12 +9,12 @@ function CreatesAds() {
      <Card style={{  margin: '20px',  }}>
         <Card.Header className='popins' style={{  background: 'transparent', border: 'none' }}>Creats Ads</Card.Header>
         <Card.Body >
-          <div class="container"style={{ width: '45%', height: '50%', background: 'transparent', border: 'none' }}>
+          <div class="container"style={{ width: '40%', height: '30%', background: 'transparent', border: 'none' }}>
           <div class="row " style={{  background: 'transparent',  border: 'none'  }}>
           <div class="col-sm">
              <Card  style={{   border: 'none', }}>
              <Card.Header style={{ width: '10%', height: '30px', background: 'transparent', border: 'none' }}>
-                  <input type="checkbox" style={{ marginRight: '5px', width: '20px', height: '20px' }} />
+                  <input type="checkbox" style={{ marginRight: '20px', width: '20px', height: '20px' }} />
                 </Card.Header>
               <Card.Body> <Card.Img
                   src='/images/Text-1.png'
@@ -30,7 +30,7 @@ function CreatesAds() {
                 /></Card.Body>
               <Card.Footer className="text-center" style={{ width: '100%', height: '70px', border: 'none' }}>
                   <span>Create</span>
-                  <Card.Title><Link to="/registration-text" style={{ textDecoration: 'none', color: 'black' }}>Text Ad</Link></Card.Title>
+                  <Card.Title><Link to="/registration-text" style={{ textDecoration: 'none', color: 'black',fontWeight:'bold'  }}>Text Ad</Link></Card.Title>
                 </Card.Footer>
              </Card>
             </div>
@@ -55,7 +55,7 @@ function CreatesAds() {
                 /></Card.Body>
               <Card.Footer className="text-center" style={{ width: '100%', height: '70px', border: 'none' }}>
                   <span>Create</span>
-                  <Card.Title><Link to="/registration-text" style={{ textDecoration: 'none', color: 'black' }}>Text Ad</Link></Card.Title>
+                  <Card.Title><Link to="/registration-text" style={{ textDecoration: 'none', color: 'black',fontWeight:'bold' }}>Text Ad</Link></Card.Title>
                 </Card.Footer>
              </Card>
             </div>
